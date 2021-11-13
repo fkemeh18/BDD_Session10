@@ -1,0 +1,103 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 15917570400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on the Techfios login page",
+            "match": {
+              "location": "LoginStepDef.user_is_on_the_techfios_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "user should be able to login with the valid credentials",
+        "description": "",
+        "id": "validate-techfios-login-functionality;user-should-be-able-to-login-with-the-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7875900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters valid username \"agentofforce07@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "agentofforce07@gmail.com",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginStepDef.user_enters_valid_username(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 174200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters valid password \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc123",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginStepDef.user_enters_valid_password(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 69600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "LoginStepDef.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 76500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user will land on the My Account page",
+            "match": {
+              "location": "LoginStepDef.the_user_will_land_on_the_My_Account_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "validate Techfios login functionality",
+    "description": "",
+    "id": "validate-techfios-login-functionality",
+    "keyword": "Feature",
+    "uri": "./src/test/java/features/Login.feature"
+  }
+]
