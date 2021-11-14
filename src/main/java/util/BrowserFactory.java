@@ -24,8 +24,6 @@ public class BrowserFactory {
 			property.load(inputStream);
 			 browser 	= property.getProperty("browser");
 			 url 		= property.getProperty("url"); 
-			 System.out.println(browser);
-			 System.out.println(url);
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
@@ -44,10 +42,12 @@ public class BrowserFactory {
 
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.get(url);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
 		return driver;
+	}
+	
+	public static String getURL() {
+		return url;
 	}
 	
 	public static void tearDown() {

@@ -43,4 +43,8 @@ WebDriver driver;
 		LOGIN_B.click();
 	}
 	
+	public String getTitle() {
+		return driver.getTitle();
+	}
+	
 }

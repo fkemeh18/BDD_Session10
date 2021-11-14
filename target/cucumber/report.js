@@ -1,10 +1,14 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("./src/test/java/features/Login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/Login.feature");
 formatter.feature({
   "line": 1,
   "name": "validate Techfios login functionality",
   "description": "",
   "id": "validate-techfios-login-functionality",
   "keyword": "Feature"
+});
+formatter.before({
+  "duration": 4369161700,
+  "status": "passed"
 });
 formatter.background({
   "line": 3,
@@ -15,14 +19,20 @@ formatter.background({
 });
 formatter.step({
   "line": 4,
-  "name": "user is on the Techfios login page",
+  "name": "user is on the \"Techfios\" login page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "LoginStepDef.user_is_on_the_techfios_login_page()"
+  "arguments": [
+    {
+      "val": "Techfios",
+      "offset": 16
+    }
+  ],
+  "location": "LoginStepDef.user_is_on_the_login_page(String)"
 });
 formatter.result({
-  "duration": 15917570400,
+  "duration": 2582033200,
   "status": "passed"
 });
 formatter.scenario({
@@ -63,7 +73,7 @@ formatter.match({
   "location": "LoginStepDef.user_enters_valid_username(String)"
 });
 formatter.result({
-  "duration": 7875900,
+  "duration": 396982700,
   "status": "passed"
 });
 formatter.match({
@@ -76,21 +86,25 @@ formatter.match({
   "location": "LoginStepDef.user_enters_valid_password(String)"
 });
 formatter.result({
-  "duration": 174200,
+  "duration": 286622700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDef.user_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 69600,
+  "duration": 1856194600,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDef.the_user_will_land_on_the_My_Account_page()"
 });
 formatter.result({
-  "duration": 76500,
+  "duration": 22474300,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 2940211400,
   "status": "passed"
 });
 });
