@@ -11,29 +11,57 @@
         "steps": [
           {
             "result": {
-              "duration": 15917570400,
+              "duration": 2582033200,
               "status": "passed"
             },
             "line": 4,
-            "name": "user is on the Techfios login page",
+            "name": "user is on the \"Techfios\" login page",
             "match": {
-              "location": "LoginStepDef.user_is_on_the_techfios_login_page()"
+              "arguments": [
+                {
+                  "val": "Techfios",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginStepDef.user_is_on_the_login_page(String)"
             },
             "keyword": "Given "
           }
         ]
       },
       {
+        "before": [
+          {
+            "result": {
+              "duration": 4369161700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDef.initializeBrowser()"
+            }
+          }
+        ],
         "line": 6,
         "name": "user should be able to login with the valid credentials",
         "description": "",
         "id": "validate-techfios-login-functionality;user-should-be-able-to-login-with-the-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 2940211400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDef.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 7875900,
+              "duration": 396982700,
               "status": "passed"
             },
             "line": 7,
@@ -51,7 +79,7 @@
           },
           {
             "result": {
-              "duration": 174200,
+              "duration": 286622700,
               "status": "passed"
             },
             "line": 8,
@@ -69,7 +97,7 @@
           },
           {
             "result": {
-              "duration": 69600,
+              "duration": 1856194600,
               "status": "passed"
             },
             "line": 9,
@@ -81,7 +109,7 @@
           },
           {
             "result": {
-              "duration": 76500,
+              "duration": 22474300,
               "status": "passed"
             },
             "line": 10,
@@ -98,6 +126,6 @@
     "description": "",
     "id": "validate-techfios-login-functionality",
     "keyword": "Feature",
-    "uri": "./src/test/java/features/Login.feature"
+    "uri": "features/Login.feature"
   }
 ]

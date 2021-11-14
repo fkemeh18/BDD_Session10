@@ -1,7 +1,7 @@
 Feature: validate Techfios login functionality
 
 Background: 
-	Given user is on the Techfios login page
+	Given user is on the "Techfios" login page
 	
 Scenario: user should be able to login with the valid credentials 
 	When user enters valid username "agentofforce07@gmail.com" 

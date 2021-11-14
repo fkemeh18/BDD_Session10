@@ -7,11 +7,11 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features=".\\src\\test\\java\\features\\Login.feature",
+		features="classpath:features",
 		glue="steps",
 //		tags="", 
 		monochrome=true,
-		dryRun=false,
+		dryRun=false, //compilation check (only, no code runs) when true
 		plugin={
 			"pretty",
 			"html:target/cucumber",
