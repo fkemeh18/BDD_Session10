@@ -41,6 +41,12 @@ public class LoginStepDef {
 	public void user_enters_valid_password(String password) throws Throwable {
 	    loginPage.enterPassword(password);
 	}
+	
+	@When("^user enters \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void user_enters_and(String username, String password) {
+		loginPage.enterUserName(username);
+		loginPage.enterPassword(password);
+	}
 
 	@When("^user clicks on login button$")
 	public void user_clicks_on_login_button() throws Throwable {
@@ -52,6 +58,7 @@ public class LoginStepDef {
 	    String expectedTitle 	= "My account - My Store";
 	    String actualTitle 		= loginPage.getTitle();
 	    Assert.assertEquals(expectedTitle, actualTitle);
+	    LoginPage.takesScreenshotAtEndOfTest(driver);
 	}
 	
 	@After

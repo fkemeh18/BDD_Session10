@@ -1,5 +1,13 @@
 package page;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -45,6 +53,16 @@ WebDriver driver;
 	
 	public String getTitle() {
 		return driver.getTitle();
+	}
+	
+	public static void takesScreenshotAtEndOfTest(WebDriver driver) throws IOException {
+		TakesScreenshot ts = ((TakesScreenshot) driver);
+		File file = ts.getScreenshotAs(OutputType.FILE);
+		SimpleDateFormat format = new SimpleDateFormat("MMddyy_HHmmss");
+		Date date = new Date();
+		String dateLabel = format.format(date);
+		String currentDirectory = System.getProperty("user.dir");
+		FileUtils.copyFile(file, new File(currentDirectory + "/screenshot/" + dateLabel +".png"));
 	}
 	
 }
