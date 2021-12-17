@@ -11,9 +11,6 @@ Scenario Outline: user should be able to login with the valid credentials
 	Examples:
 		|		 username		 |password|
 		|agentofforce07@gmail.com| abc123 |
-		|agentofforce07@gmail.com| abc124 |
-		|agentofforce05@gmail.com| abc123 |
-		|agentofforce05@gmail.com| abc124 |
 		
 @Scenario1	
 Scenario: 1 user should be able to login with the valid credentials 

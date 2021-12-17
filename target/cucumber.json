@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4974385900,
+              "duration": 4233510400,
               "status": "passed"
             },
             "line": 4,
@@ -33,7 +33,7 @@
         "before": [
           {
             "result": {
-              "duration": 6315701700,
+              "duration": 4949621600,
               "status": "passed"
             },
             "match": {
@@ -41,14 +41,14 @@
             }
           }
         ],
-        "line": 19,
-        "name": "1 user should be able to login with the valid credentials",
+        "line": 13,
+        "name": "user should be able to login with the valid credentials",
         "description": "",
-        "id": "validate-techfios-login-functionality;1-user-should-be-able-to-login-with-the-valid-credentials",
+        "id": "validate-techfios-login-functionality;user-should-be-able-to-login-with-the-valid-credentials;;2",
         "after": [
           {
             "result": {
-              "duration": 3252606100,
+              "duration": 2941429200,
               "status": "passed"
             },
             "match": {
@@ -57,50 +57,40 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1088900900,
+              "duration": 703535300,
               "status": "passed"
             },
-            "line": 20,
-            "name": "user enters valid username \"agentofforce07@gmail.com\"",
+            "line": 8,
+            "name": "user enters \"agentofforce07@gmail.com\" and \"abc123\"",
             "match": {
               "arguments": [
                 {
                   "val": "agentofforce07@gmail.com",
-                  "offset": 28
-                }
-              ],
-              "location": "LoginStepDef.user_enters_valid_username(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 471397400,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "user enters valid password \"abc123\"",
-            "match": {
-              "arguments": [
+                  "offset": 13
+                },
                 {
                   "val": "abc123",
-                  "offset": 28
+                  "offset": 44
                 }
               ],
-              "location": "LoginStepDef.user_enters_valid_password(String)"
+              "location": "LoginStepDef.user_enters_and(String,String)"
             },
+            "matchedColumns": [
+              0,
+              1
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1628352100,
+              "duration": 2556832400,
               "status": "passed"
             },
-            "line": 22,
+            "line": 9,
             "name": "user clicks on login button",
             "match": {
               "location": "LoginStepDef.user_clicks_on_login_button()"
@@ -109,10 +99,10 @@
           },
           {
             "result": {
-              "duration": 1403232400,
+              "duration": 1033634300,
               "status": "passed"
             },
-            "line": 23,
+            "line": 10,
             "name": "the user will land on the My Account page",
             "match": {
               "location": "LoginStepDef.the_user_will_land_on_the_My_Account_page()"
@@ -122,8 +112,8 @@
         ],
         "tags": [
           {
-            "line": 18,
-            "name": "@Scenario1"
+            "line": 6,
+            "name": "@Smoke"
           }
         ]
       }
