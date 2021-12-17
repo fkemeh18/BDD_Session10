@@ -18,6 +18,6 @@ import cucumber.api.junit.Cucumber;
 			"json:target/cucumber.json"
 		}
 		)
-public class LoginRunner {
+public class LoginRunnerTest {
 	
-}
+} 
