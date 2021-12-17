@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4995973500,
+  "duration": 6315701700,
   "status": "passed"
 });
 formatter.background({
@@ -32,7 +32,7 @@ formatter.match({
   "location": "LoginStepDef.user_is_on_the_login_page(String)"
 });
 formatter.result({
-  "duration": 3193813300,
+  "duration": 4974385900,
   "status": "passed"
 });
 formatter.scenario({
@@ -79,7 +79,7 @@ formatter.match({
   "location": "LoginStepDef.user_enters_valid_username(String)"
 });
 formatter.result({
-  "duration": 347784800,
+  "duration": 1088900900,
   "status": "passed"
 });
 formatter.match({
@@ -92,25 +92,25 @@ formatter.match({
   "location": "LoginStepDef.user_enters_valid_password(String)"
 });
 formatter.result({
-  "duration": 249855900,
+  "duration": 471397400,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDef.user_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 2081345500,
+  "duration": 1628352100,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDef.the_user_will_land_on_the_My_Account_page()"
 });
 formatter.result({
-  "duration": 974673500,
+  "duration": 1403232400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2937293100,
+  "duration": 3252606100,
   "status": "passed"
 });
 });
